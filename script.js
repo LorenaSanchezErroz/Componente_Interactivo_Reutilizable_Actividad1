@@ -14,8 +14,22 @@ const productos = [
     nombre: "PIANO",
     imagen: "https://musicasatiendas.com/8635-large_default/yamaha-gb-1k-sc3-piano-de-cola-silent.jpg",
     descripcion: "YAMAHA GB-1K SC3 Piano de Cola SILENT.",
-    precio: 17800.45,
+    precio: 17800.49,
     caracteristicas: "Piano de cola Yamaha con sistema silent incorporado. 151cm. Negro pulido."
+    },
+    {
+    nombre: "GUITARRA ALHAMBRA Z-NATURE E2",
+    imagen: "https://musicasatiendas.com/243-large_default/alhambra-z-nature-e2.jpg",
+    descripcion: "ALHAMBRA Z-NATURE E2.",
+    precio: 764.89,
+    caracteristicas: "La fantástica guitarra Alhambra Z-Nature, equipada con el previo FISHMANN PREFIX problend E2, lo que la convierte en una guitarra profesional, con un sonido excepcional."
+    },
+    {
+    nombre: "CLARINETE",
+    imagen: "https://musicasatiendas.com/311-large_default/gara-glc-21-clarinete-sib.jpg",
+    descripcion: "J. MICHAEL 300 CL-360 clarinete Sib llaves niqueladas.",
+    precio: 204.59,
+    caracteristicas: "Clarinete Sib, Construido en Ebonita. Sistema Boehm francés.Mecánica de 17 llaves niqueladas."
     }
 ];
 
