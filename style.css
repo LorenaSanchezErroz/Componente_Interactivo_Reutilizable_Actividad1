@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #efeae6;
+}
+
+h1 {
+    font-size: 5rem;
+    color: rgb(69, 3, 3);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contenedor-producto { 
+    display: flex; /*los productos se alinean y distribuyen automáticamente en una sola dimensión (fila o columna)*/
+    flex-wrap: wrap; /*si los elementos hijos no caben en una línea, deben pasar a la siguiente línea*/
+    gap: 20px; /*espacio entre los productos (vertical y horizontal)*/
+    justify-content: center; /*centra horizontalmente*/
+}
+
+.tarjeta-producto {
+    background-color: rgb(184, 165, 144);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3 ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-producto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.tarjeta-producto h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.tarjeta-producto p {
+    font-size: 0.9rem;
+}
+
+.botones {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+   cursor: pointer;
+}
+
+.ver-mas {
+    background-color: #a78128 ;
+    padding-top: 5px;
+    text-align: center;
+    color: whitesmoke;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+}
+
+.ver-mas:hover {
+    opacity: 0.5;
+}
+
+.comprar {
+    background-color: #28a745;
+    padding-top: 5px;
+    text-align: center;
+    color: whitesmoke;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+}
+
+.comprar:hover {
+    opacity: 0.5;
+}
+
+.formulario {
+    display: none;
+    margin-top: 10px;
+}
+
+.formulario input, .formulario select {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: antiquewhite;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-modal {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenedor-modal button {
+    margin: 0 20px 0 20px;
+}
+ /*Si el ancho de la ventana de visualización
+ es de 600px o menos todos los eslementos de 
+ la clase tarjeta-producto tendrán un 90% de 
+ su ancho total*/
+@media (max-width: 600px) {
+    .tarjeta-producto{
+        width: 90%;
+    }
+}
+
